@@ -6,7 +6,8 @@ public class Circle : MonoBehaviour
 {
     public float angularVelocity = 100f;
 
-    void Update() {
+    void Update() 
+    {
         transform.Rotate(0f, 0f, angularVelocity * Time.deltaTime);
     }
 }
