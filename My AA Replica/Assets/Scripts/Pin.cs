@@ -8,6 +8,7 @@ public class Pin : MonoBehaviour
 
     public float velocity = 20f;
     public Rigidbody2D rb;
+    public float mass;
 
     void Update() 
     {
@@ -33,7 +34,7 @@ public class Pin : MonoBehaviour
 
     public float CalculatePinGravityMultiplayer()
     {
-        return (Mathf.Sin(GetPinRotationInRadians()));
+        return (Mathf.Sin(GetPinRotationInRadians())) * this.mass;
     }
 
     private float GetPinRotation()

@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
 		if (!gameHasEnded)
 		{
 			gameHasEnded = true;
-			Debug.Log("End Game");
 			spawner.enabled = false;
 			circle.enabled = false;
 
@@ -26,6 +25,7 @@ public class GameManager : MonoBehaviour
 
 	public void RestartLevel ()
 	{
+		Circle.pins = new List<Pin>();
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 }

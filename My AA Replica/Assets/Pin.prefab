@@ -240,3 +240,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 20
   rb: {fileID: 3804696168081190362}
+  mass: 1
