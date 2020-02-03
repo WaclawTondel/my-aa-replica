@@ -356,6 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angularVelocity: 100
+  additionalMassAngularVelocity: 10
 --- !u!212 &1360382289
 SpriteRenderer:
   m_ObjectHideFlags: 0

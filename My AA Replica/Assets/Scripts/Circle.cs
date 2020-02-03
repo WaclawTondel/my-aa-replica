@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Circle : MonoBehaviour
 {
-    public float angularVelocity = 100f;
-    public float additionalMassAngularVelocity = 10f;
+    public float angularVelocity;
+    public float additionalMassAngularVelocity;
     public static List<Pin> pins = new List<Pin>();
 
     void Update() 
@@ -15,7 +15,9 @@ public class Circle : MonoBehaviour
         {
                 GravityMultiplayer += pin.CalculatePinGravityMultiplayer();
         }
-        angularVelocity -= additionalMassAngularVelocity * GravityMultiplayer * Time.deltaTime;
-        transform.Rotate(0f, 0f, (angularVelocity) * Time.deltaTime);
+        Debug.LogError(GravityMultiplayer);
+        ;
+        ;
+        transform.Rotate(0f, 0f, (angularVelocity - additionalMassAngularVelocity * GravityMultiplayer) * Time.deltaTime); Debug.LogError(angularVelocity);
     }
 }
