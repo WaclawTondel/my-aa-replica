@@ -9,19 +9,11 @@ public class Pin : MonoBehaviour
     public float velocity = 20f;
     public Rigidbody2D rb;
 
-    private float TimeMultiplayer = 0;
-
     void Update() 
     {
         if (!isPinned)
         {
             rb.MovePosition(rb.position + Vector2.up * velocity * Time.deltaTime);
-        }else if (TimeMultiplayer < 1)
-        {
-            TimeMultiplayer += Time.deltaTime / 5;
-        }else
-        {
-            TimeMultiplayer = 1;
         }
     }
 
@@ -41,7 +33,7 @@ public class Pin : MonoBehaviour
 
     public float CalculatePinGravityMultiplayer()
     {
-        return (Mathf.Cos(GetPinRotationInRadians())) * TimeMultiplayer;
+        return (Mathf.Sin(GetPinRotationInRadians()));
     }
 
     private float GetPinRotation()
