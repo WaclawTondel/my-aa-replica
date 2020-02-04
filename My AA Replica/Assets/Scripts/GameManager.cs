@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
 	public Circle circle;
 	public Spawner spawner;
+	public Ring ring;
 
 	public Animator animator;
 	public void EndGame()
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
 	{
 		spawner.enabled = false;
 		circle.enabled = false;
+		ring.enabled = false;
 		animator.SetTrigger("GameWon");
 	}
 

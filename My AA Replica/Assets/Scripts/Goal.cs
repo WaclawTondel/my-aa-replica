@@ -9,7 +9,7 @@ public class Goal : MonoBehaviour
 
 	void Start ()
 	{
-		PinsLeft = 15;
+		PinsLeft = 3;
 	}
 
 	void Update ()

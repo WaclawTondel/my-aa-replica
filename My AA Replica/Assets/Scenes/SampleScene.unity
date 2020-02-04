@@ -400,11 +400,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c028962cadeb6c4cb6a57056269179a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4029dd7d95dd69944b05cd2f12d0df5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 1360382288}
   spawner: {fileID: 297472085}
+  ring: {fileID: 758272505}
   animator: {fileID: 519420033}
 --- !u!20 &519420031
 Camera:
@@ -509,7 +510,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 758272504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8ca654a3597cc4399f766d47929806, type: 3}
+  m_Script: {fileID: 11500000, guid: fbc95b1c63670a841aa112bfca04e7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!60 &758272506
