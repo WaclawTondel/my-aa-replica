@@ -31,6 +31,11 @@ public class Pin : MonoBehaviour
         } else if(collider.tag == "pin") 
         {
             FindObjectOfType<GameManager>().EndGame();
+        } else if(collider.tag == "ring")
+        {
+            transform.SetParent(collider.transform);
+            isPinned = true;
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 
