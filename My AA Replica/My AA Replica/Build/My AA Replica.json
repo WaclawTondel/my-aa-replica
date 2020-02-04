@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "My AA Replica",
+"dataUrl": "My AA Replica.data.unityweb",
+"wasmCodeUrl": "My AA Replica.wasm.code.unityweb",
+"wasmFrameworkUrl": "My AA Replica.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
