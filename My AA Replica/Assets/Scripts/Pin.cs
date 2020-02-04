@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Pin : MonoBehaviour
 {
@@ -23,8 +21,13 @@ public class Pin : MonoBehaviour
         if(collider.tag == "circle")
         {
             transform.SetParent(collider.transform);
+            Goal.PinsLeft--;
             isPinned = true;
             Circle.pins.Add(this);
+            if (Goal.PinsLeft == 0)
+            {
+                FindObjectOfType<GameManager>().WinGame();
+            }
         } else if(collider.tag == "pin") 
         {
             FindObjectOfType<GameManager>().EndGame();

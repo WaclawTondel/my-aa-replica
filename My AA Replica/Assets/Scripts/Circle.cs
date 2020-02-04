@@ -18,6 +18,16 @@ public class Circle : MonoBehaviour
         Debug.LogError(GravityMultiplayer);
         ;
         ;
-        transform.Rotate(0f, 0f, (angularVelocity - additionalMassAngularVelocity * GravityMultiplayer) * Time.deltaTime); Debug.LogError(angularVelocity);
+        transform.Rotate(0f, 0f, this.CalculateSpeed(GravityMultiplayer) * Time.deltaTime); 
+    }
+
+    private float CalculateSpeed (float GravityMultiplayer)
+    {
+        float speed = (angularVelocity - additionalMassAngularVelocity * GravityMultiplayer);
+        if (speed < 10)
+        {
+            speed = 10;
+        }
+        return speed;
     }
 }

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,6 +20,13 @@ public class GameManager : MonoBehaviour
 
 			animator.SetTrigger("EndGame");
 		}
+	}
+
+	public void WinGame()
+	{
+		spawner.enabled = false;
+		circle.enabled = false;
+		animator.SetTrigger("GameWon");
 	}
 
 	public void RestartLevel ()
